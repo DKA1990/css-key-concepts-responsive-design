@@ -130,5 +130,45 @@ const cats= [
     }
 })();
 
+function backgroundColour(selection) {
+    let colour = document.querySelector('.colour-change').style.backgroundColor;
+    let borderColour = document.querySelector('.colour-change').style.borderColor;
+    let textColour = document.querySelector('.colour-change').textColor;
+    switch (selection) {
+        case '1':
+            colour = '#E7ECEF';
+            borderColour = '#2F4F4F';
+            textColour = '#000000';
+            break;
+        case '2':
+            colour = '#F05D5E';
+            borderColour = '#7FFF00';
+            textColour = '#000000';
+            break;
+        case '3':
+            colour = '#0F7173';
+            borderColour = '#556B2F';
+            textColour = '#FFFFFF';
+            break;
+        case '4':
+            colour = '#272932';
+            borderColour = '#FFFFFF';
+            textColour = '#FFFFFF';
+            break;
+        case '5':
+            colour = '#D8A47F';
+            borderColour = '#FFD700';
+            textColour = '#000000';
+            break;
+    }
+
+    const classes = document.getElementsByClassName('colour-change');
+    for (let i = 0; i < classes.length; i++) {
+        classes[i].style.backgroundColor = colour;
+        classes[i].style.borderColor = borderColour;
+        classes[i].style.color = textColour;
+    }
+}
+
 
 

@@ -1,20 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
+
 :root {
     --coral: #F05D5E;
+    --coral-border: #7FFF00;
     --teal: #0F7173;
+    --teal-border: #556B2F;
     --light: #E7ECEF;
+    --light-border: #2F4F4F;
     --dark: #272932;
+    --dark-border: #FFFFFF;
     --camel: #D8A47F;
+    --camel-border: #FFD700;
+}
+
+.nav-list {
+    font-family: 'Didact Gothic';
+    font-size: 1.25rem;
+    list-style-type: none;
+    background-color: black;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+
+.nav-list li {
+    overflow: hidden;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list a:hover {
+    background-color: lightgrey;
+    color: black;
+    font-weight: bold;
+}
+
+.theme-select {
+    font-family: 'Didact Gothic';
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    border-color: var(--light-border);
+}
+
+.radio-label {
+    margin-left: 0.2rem;
+    margin-right: 1rem;
 }
 
 body {
     background-color: var(--light);
+    font-family: 'Didact Gothic';
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+p {
+    font-size: 0.75rem;
+}
+
+.card-container {
+    border: 0.2rem solid;
+    border-color: var(--light-border);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card {
+    border: 0.2rem solid;
+    border-color: var(--light-border);
     padding: 10px;
     margin: 10px;
+    width: 270px;
+}
+
+.fav-foods {
+    overflow-wrap: break-word;
 }
 
 img {
     width: 250px;
+}
+
+@media only screen and (min-width: 700px) {
+    h1 {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    h1 {
+        font-size: 3.75rem;
+    }
+    p {
+        font-size: 1.25rem;
+    }
 }
