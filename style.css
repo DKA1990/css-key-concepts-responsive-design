@@ -69,13 +69,17 @@ p {
 .card-container {
     border: 0.2rem solid;
     border-color: var(--light-border);
+    border-radius: 1rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
     border: 0.2rem solid;
     border-color: var(--light-border);
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
     padding: 10px;
     margin: 10px;
     width: 270px;
